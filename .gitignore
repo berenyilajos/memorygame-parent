@@ -1,11 +1,11 @@
 
-/target/
-/.settings/
+*/target/
+*/.settings/
 /.idea/
 *.class
-.classpath
-.project
-memorygame.iml
+*/.classpath
+*/.project
+*.iml
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
