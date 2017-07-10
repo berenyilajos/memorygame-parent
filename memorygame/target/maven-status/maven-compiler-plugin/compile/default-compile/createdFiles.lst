@@ -1,6 +1,0 @@
-hu\icell\app\MyRestApplication.class
-hu\icell\services\ResultService.class
-hu\icell\jpa\EntityManagerProducer.class
-hu\icell\services\ResultRestService.class
-hu\icell\services\IndexService.class
-hu\icell\services\BaseService.class
