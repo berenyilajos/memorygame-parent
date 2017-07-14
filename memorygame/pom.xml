@@ -64,6 +64,11 @@
 	</dependency> -->
 		<!-- https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jaxrs -->
 		<dependency>
+		    <groupId>ch.qos.logback</groupId>
+		    <artifactId>logback-classic</artifactId>
+		    <version>1.2.3</version>
+		</dependency>
+		<dependency>
 			<groupId>org.jboss.resteasy</groupId>
 			<artifactId>resteasy-jaxrs</artifactId>
 			<version>3.1.2.Final</version>
