@@ -4,7 +4,6 @@
     <groupId>hu.icell</groupId>
     <artifactId>memorygame-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <relativePath>memorygame-parent</relativePath>
   </parent>
   <artifactId>memorygame-action</artifactId>
   	<dependencies>
