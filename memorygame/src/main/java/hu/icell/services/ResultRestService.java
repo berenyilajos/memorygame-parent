@@ -44,9 +44,13 @@ public class ResultRestService extends BaseService {
         resultResponse.setSeconds(seconds);
         HttpSession session = request.getSession(false);
         User user;
-        if (userId <= 0 || seconds <= 0 || session == null || (user = (User)session.getAttribute("user")) == null || user.getId() != userId) {
+        if (userId <= 0 || seconds <= 0) {
             resultResponse.setSuccess(SuccessType.ERROR);
-            resultResponse.setMessage("Invalid input");
+            resultResponse.setMessage("Invalid input!");
+            return resultResponse;
+        } else if (session == null || (user = (User)session.getAttribute("user")) == null || user.getId() != userId) {
+            resultResponse.setSuccess(SuccessType.ERROR);
+            resultResponse.setMessage("User is not logged in!");
             return resultResponse;
         }
         resultAction.saveResult(seconds, userId);
